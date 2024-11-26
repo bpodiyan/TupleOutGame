@@ -11,4 +11,8 @@ class TupleOutDiceGame:
         self.scores = [0] * players  # Scores for each player
         self.current_player = 0  # Start with Player 1
 
-  
+    def roll_dice(self):
+       """
+       This function is for simulating rolling three dice. The function returns a list of three random integers between 1 and 6.
+       """
+       return [random.randint(1, 6) for _ in range(3)]
